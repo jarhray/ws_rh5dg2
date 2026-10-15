@@ -1,0 +1,5 @@
+# Returns a cached snapshot without an extra serial transaction.
+---
+bool success
+string message
+rh5dg2_interfaces/HandState state

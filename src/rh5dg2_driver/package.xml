@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rh5dg2_driver</name>
+  <version>0.1.0</version>
+  <description>Bounded RS485 transactions and ROS 2 hardware hand control.</description>
+  <maintainer email="jarhray@users.noreply.github.com">Jerry</maintainer>
+  <license>Proprietary</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>rh5dg2_interfaces</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

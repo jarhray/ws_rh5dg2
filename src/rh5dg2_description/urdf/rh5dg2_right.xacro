@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="RH5DG2_R_2026_01_12">
+  <link
+    name="right_hand_flange">
+    <inertial>
+      <origin
+        xyz="0.000590324230515745 -4.41066235895571E-08 0.018658168492136"
+        rpy="0 0 0" />
+      <mass
+        value="0.0816272765426702" />
+      <inertia
+        ixx="2.75104686550082E-05"
+        ixy="-4.85912163791784E-11"
+        ixz="3.17186486652321E-08"
+        iyy="2.64222243265588E-05"
+        iyz="1.09459930565443E-11"
+        izz="3.62935481756171E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_hand_flange.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_hand_flange.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_flange_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="right_hand_flange" />
+    <child
+      link="right_hand_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_hand_base">
+    <inertial>
+      <origin
+        xyz="0.00476756631465456 0.00175486916477953 0.0587979044163915"
+        rpy="0 0 0" />
+      <mass
+        value="0.313373727622822" />
+      <inertia
+        ixx="0.000278996704854979"
+        ixy="5.98018974024641E-06"
+        ixz="-1.05020418854344E-05"
+        iyy="0.000216312986429234"
+        iyz="-1.42127984491883E-05"
+        izz="0.000114394945480033" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_hand_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_hand_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_thumb_yaw">
+    <inertial>
+      <origin
+        xyz="0.000851897283664193 0.00483571971174275 -0.00574141841695075"
+        rpy="0 0 0" />
+      <mass
+        value="0.00481735450280768" />
+      <inertia
+        ixx="1.77883416432454E-07"
+        ixy="-1.4852348790338E-08"
+        ixz="-1.10223746267107E-09"
+        iyy="9.58659671745112E-08"
+        iyz="5.54372476858133E-11"
+        izz="1.65931218249892E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_yaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_yaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_yaw_joint"
+    type="revolute">
+    <origin
+      xyz="0.021 0.021699 0.04175"
+      rpy="0 0 0" />
+    <parent
+      link="right_hand_base" />
+    <child
+      link="right_thumb_yaw" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.92"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_thumb_mcp">
+    <inertial>
+      <origin
+        xyz="0.025194612573869 0.00470162547088749 -0.00721129474275403"
+        rpy="0 0 0" />
+      <mass
+        value="0.0417560711563155" />
+      <inertia
+        ixx="4.59979341669256E-06"
+        ixy="-1.45470106933137E-06"
+        ixz="5.58870625419533E-09"
+        iyy="6.84088254138929E-06"
+        iyz="6.02428016494947E-09"
+        izz="8.65411062567632E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_mcp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_mcp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_mcp_joint"
+    type="revolute">
+    <origin
+      xyz="0.0084186 0.010193 -0.01022"
+      rpy="1.7453 0 1.3963" />
+    <parent
+      link="right_thumb_yaw" />
+    <child
+      link="right_thumb_mcp" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.6632"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_thumb_pip">
+    <inertial>
+      <origin
+        xyz="0.0196408645855889 0.00242395573483212 -0.0109191426793314"
+        rpy="0 0 0" />
+      <mass
+        value="0.0413809633564141" />
+      <inertia
+        ixx="4.96850464366127E-06"
+        ixy="-1.31907241751355E-06"
+        ixz="8.88960161741137E-09"
+        iyy="6.85457643394163E-06"
+        iyz="4.37339295353162E-09"
+        izz="8.67807228359951E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_pip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_pip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_pip_joint"
+    type="revolute">
+    <origin
+      xyz="0.043727 0.01749 0.0036"
+      rpy="0 0 0" />
+    <parent
+      link="right_thumb_mcp" />
+    <child
+      link="right_thumb_pip" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.041888"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="right_thumb_mcp_joint"
+        multiplier="1.0853"
+        offset="0" /> 
+  </joint>
+  <link
+    name="right_thumb_dip">
+    <inertial>
+      <origin
+        xyz="0.0129223767041669 -0.00448868354831102 -0.00799774270077806"
+        rpy="0 0 0" />
+      <mass
+        value="0.00737636421207598" />
+      <inertia
+        ixx="4.78965186477482E-07"
+        ixy="-3.84626531297066E-08"
+        ixz="-1.001875596605E-10"
+        iyy="8.07509344169254E-07"
+        iyz="-7.91953445955167E-11"
+        izz="8.31354000304304E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_dip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_dip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_dip_joint"
+    type="revolute">
+    <origin
+      xyz="0.036427 0.019902 -0.0028"
+      rpy="0 0 0" />
+    <parent
+      link="right_thumb_pip" />
+    <child
+      link="right_thumb_dip" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.03"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_thumb_force_sensor">
+    <inertial>
+      <origin
+        xyz="1.49901055418299E-05 -0.00563264518277098 -0.00559872008620623"
+        rpy="0 0 0" />
+      <mass
+        value="0.00082154243439554" />
+      <inertia
+        ixx="3.90581954306162E-08"
+        ixy="-1.27342605974583E-11"
+        ixz="1.9845992056927E-12"
+        iyy="1.76549694169177E-08"
+        iyz="-9.02510719590674E-09"
+        izz="4.94025774187095E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_force_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_thumb_force_sensor.STL" />
+      </geometry>
+      <surface>
+          <friction>
+              <ode>
+                  <mu>0.25</mu>  
+                  <mu2>0.25</mu2> 
+              </ode>
+          </friction>
+      </surface>  
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_force_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.025343 0.0072822 -0.0079999"
+      rpy="-1.2546 -1.5705 -0.4908" />
+    <parent
+      link="right_thumb_dip" />
+    <child
+      link="right_thumb_force_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_index_pitch">
+    <inertial>
+      <origin
+        xyz="-0.000367349463998261 -0.000210166188066754 0.00749999141843509"
+        rpy="0 0 0" />
+      <mass
+        value="0.00120122602313453" />
+      <inertia
+        ixx="7.1980057585389E-09"
+        ixy="2.00682705504413E-10"
+        ixz="-9.82275603332215E-15"
+        iyy="1.51631692815451E-08"
+        iyz="1.89296029269202E-14"
+        izz="1.15933131895546E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_pitch_joint"
+    type="revolute">
+    <origin
+      xyz="0.01 0.040749 0.11475"
+      rpy="1.5708 0 0" />
+    <parent
+      link="right_hand_base" />
+    <child
+      link="right_index_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.45735"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_index_mcp">
+    <inertial>
+      <origin
+        xyz="-2.01467999326986E-05 0.0194880288322318 -0.0167588939823536"
+        rpy="0 0 0" />
+      <mass
+        value="0.0424626596591662" />
+      <inertia
+        ixx="8.58396037676953E-06"
+        ixy="4.88991803458719E-09"
+        ixz="-2.94206076182322E-09"
+        iyy="3.47062801235869E-06"
+        iyz="-1.64833233320948E-07"
+        izz="7.46371056418488E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_mcp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_mcp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_mcp_joint"
+    type="revolute">
+    <origin
+      xyz="0.0054995 -7.3567E-05 0.0075"
+      rpy="0.013375 1.5708 0" />
+    <parent
+      link="right_index_pitch" />
+    <child
+      link="right_index_mcp" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.26118"
+      upper="0.26118"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_index_pip">
+    <inertial>
+      <origin
+        xyz="-0.00314419755359261 0.0106744889274093 0.00864412503243511"
+        rpy="0 0 0" />
+      <mass
+        value="0.00574496268336632" />
+      <inertia
+        ixx="4.93347889217061E-07"
+        ixy="8.64715993100959E-08"
+        ixz="-5.69691223041633E-10"
+        iyy="4.81536550488213E-07"
+        iyz="1.94076484140821E-09"
+        izz="5.21882082889534E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_pip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_pip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_pip_joint"
+    type="revolute">
+    <origin
+      xyz="0.0084499 0.042211 -0.0075397"
+      rpy="-1.5708 -1.5574 1.5708" />
+    <parent
+      link="right_index_mcp" />
+    <child
+      link="right_index_pip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.396"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_index_dip">
+    <inertial>
+      <origin
+        xyz="-0.000644949745313064 0.0154182461989069 0.00810065277966891"
+        rpy="0 0 0" />
+      <mass
+        value="0.00664978049326489" />
+      <inertia
+        ixx="6.05852720084231E-07"
+        ixy="-4.01125528847643E-08"
+        ixz="2.81985876722265E-11"
+        iyy="1.81147685100013E-07"
+        iyz="-2.47884779332845E-11"
+        izz="5.21594011307318E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_dip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_dip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_dip_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0032605 0.018491 0.00035"
+      rpy="0 0 0" />
+    <parent
+      link="right_index_pip" />
+    <child
+      link="right_index_dip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.568"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="right_index_pip_joint"
+        multiplier="1.1232"
+        offset="0" /> 
+  </joint>
+  <link
+    name="right_index_force_sensor">
+    <inertial>
+      <origin
+        xyz="1.50411264972679E-05 -0.00563322560166721 -0.00559906326998691"
+        rpy="0 0 0" />
+      <mass
+        value="0.000821477170958115" />
+      <inertia
+        ixx="3.90513353148686E-08"
+        ixy="-1.11829645998234E-11"
+        ixz="2.69394488312643E-12"
+        iyy="1.7654484497724E-08"
+        iyz="-9.0241075264863E-09"
+        izz="4.93951009703017E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_force_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_index_force_sensor.STL" />
+      </geometry>
+      <surface>
+          <friction>
+              <ode>
+                  <mu>0.25</mu>  
+                  <mu2>0.25</mu2> 
+              </ode>
+          </friction>
+      </surface> 
+    </collision>
+  </link>
+  <joint
+    name="right_index_force_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.0081855 0.031293 0.0080998"
+      rpy="1.887 1.5705 2.1733" />
+    <parent
+      link="right_index_dip" />
+    <child
+      link="right_index_force_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_pitch">
+    <inertial>
+      <origin
+        xyz="-0.000367349404021302 -0.000210161704238897 0.00748999141843493"
+        rpy="0 0 0" />
+      <mass
+        value="0.00120122602313453" />
+      <inertia
+        ixx="7.19800575853891E-09"
+        ixy="2.00682705504411E-10"
+        ixz="-9.82275603809425E-15"
+        iyy="1.51631692815451E-08"
+        iyz="1.89296029311036E-14"
+        izz="1.15933131895546E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_pitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_pitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_pitch_joint"
+    type="revolute">
+    <origin
+      xyz="0.01 0.014999 0.11475"
+      rpy="1.5708 0 0" />
+    <parent
+      link="right_hand_base" />
+    <child
+      link="right_middle_pitch" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.45735"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_middle_mcp">
+    <inertial>
+      <origin
+        xyz="-2.0146945491413E-05 0.0194880312652293 -0.0167588944645467"
+        rpy="0 0 0" />
+      <mass
+        value="0.042462664998855" />
+      <inertia
+        ixx="8.58396241049123E-06"
+        ixy="4.89002069633661E-09"
+        ixz="-2.94206543993551E-09"
+        iyy="3.47062806248695E-06"
+        iyz="-1.64832922001247E-07"
+        izz="7.46371256678543E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_mcp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_mcp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_mcp_joint"
+    type="revolute">
+    <origin
+      xyz="0.0054995 -7.3563E-05 0.00749"
+      rpy="0.013375 1.5708 0" />
+    <parent
+      link="right_middle_pitch" />
+    <child
+      link="right_middle_mcp" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.26118"
+      upper="0.26118"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_middle_pip">
+    <inertial>
+      <origin
+        xyz="-0.0031441972034093 0.0106744891490008 0.00864412512279808"
+        rpy="0 0 0" />
+      <mass
+        value="0.00574496250418362" />
+      <inertia
+        ixx="4.93347880963852E-07"
+        ixy="8.6471614745122E-08"
+        ixz="-5.69682248129181E-10"
+        iyy="4.81536528984814E-07"
+        iyz="1.94076860553629E-09"
+        izz="5.21882050440504E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_pip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_pip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_pip_joint"
+    type="revolute">
+    <origin
+      xyz="0.0084499 0.042211 -0.0075397"
+      rpy="-1.5708 -1.5574 1.5708" />
+    <parent
+      link="right_middle_mcp" />
+    <child
+      link="right_middle_pip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.396"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_middle_dip">
+    <inertial>
+      <origin
+        xyz="-0.000701517469291216 0.0161183560449928 0.00810132146835783"
+        rpy="0 0 0" />
+      <mass
+        value="0.00790894444915994" />
+      <inertia
+        ixx="9.91831302518168E-07"
+        ixy="4.22510553763792E-09"
+        ixz="7.16512413943551E-11"
+        iyy="2.48636663362811E-07"
+        iyz="-1.49937666788817E-11"
+        izz="9.19075362342684E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_dip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_dip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_dip_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0032605 0.018491 0.00035"
+      rpy="0 0 0" />
+    <parent
+      link="right_middle_pip" />
+    <child
+      link="right_middle_dip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.568"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="right_middle_pip_joint"
+        multiplier="1.1232"
+        offset="0" /> 
+  </joint>
+  <link
+    name="right_middle_force_sensor">
+    <inertial>
+      <origin
+        xyz="1.50394570450282E-05 -0.00563322673087575 -0.00559906338785213"
+        rpy="0 0 0" />
+      <mass
+        value="0.00082147735143828" />
+      <inertia
+        ixx="3.90513415024573E-08"
+        ixy="-1.11899639678725E-11"
+        ixz="2.69219173504368E-12"
+        iyy="1.76544907369721E-08"
+        iyz="-9.02410988222755E-09"
+        izz="4.93951129208313E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_force_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_middle_force_sensor.STL" />
+      </geometry>
+      <surface>
+          <friction>
+              <ode>
+                  <mu>0.25</mu>  
+                  <mu2>0.25</mu2> 
+              </ode>
+          </friction>
+      </surface> 
+    </collision>
+  </link>
+  <joint
+    name="right_middle_force_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.0082142 0.033293 0.0080998"
+      rpy="1.887 1.5705 2.1733" />
+    <parent
+      link="right_middle_dip" />
+    <child
+      link="right_middle_force_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_ring_mcp">
+    <inertial>
+      <origin
+        xyz="-0.010700946384068 0.0212571795812487 0.00821908887230147"
+        rpy="0 0 0" />
+      <mass
+        value="0.0400004914542444" />
+      <inertia
+        ixx="6.27547006168206E-06"
+        ixy="9.05324050505327E-08"
+        ixz="3.54862068684509E-09"
+        iyy="3.29045944927205E-06"
+        iyz="-4.7782013472686E-09"
+        izz="7.39552142459584E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_mcp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_mcp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_mcp_joint"
+    type="revolute">
+    <origin
+      xyz="0.01 -0.0068013 0.11475"
+      rpy="1.5708 0 0" />
+    <parent
+      link="right_hand_base" />
+    <child
+      link="right_ring_mcp" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.45735"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_ring_pip">
+    <inertial>
+      <origin
+        xyz="0.00314419732096636 -0.0106744890675499 0.00864412507241823"
+        rpy="0 0 0" />
+      <mass
+        value="0.00574496256337836" />
+      <inertia
+        ixx="4.93347885228067E-07"
+        ixy="8.64716091309473E-08"
+        ixz="5.6968636055712E-10"
+        iyy="4.81536537220291E-07"
+        iyz="-1.94076631732424E-09"
+        izz="5.21882062158111E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_pip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_pip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_pip_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0014709 0.04212 -0.0002499"
+      rpy="0 0 -3.1416" />
+    <parent
+      link="right_ring_mcp" />
+    <child
+      link="right_ring_pip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.396"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_ring_dip">
+    <inertial>
+      <origin
+        xyz="-0.000986492679010138 0.015161048316122 0.0081024753697552"
+        rpy="0 0 0" />
+      <mass
+        value="0.0075190935660202" />
+      <inertia
+        ixx="7.08307399697461E-07"
+        ixy="-2.22143582188237E-08"
+        ixz="-2.76043626039761E-12"
+        iyy="2.15393048794773E-07"
+        iyz="1.13179084874251E-10"
+        izz="6.38506239799037E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_dip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_dip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_dip_joint"
+    type="revolute">
+    <origin
+      xyz="0.0032605 -0.018491 0.00035"
+      rpy="0 0 3.1416" />
+    <parent
+      link="right_ring_pip" />
+    <child
+      link="right_ring_dip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.568"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="right_ring_pip_joint"
+        multiplier="1.1232"
+        offset="0" /> 
+  </joint>
+  <link
+    name="right_ring_force_sensor">
+    <inertial>
+      <origin
+        xyz="1.50394703578235E-05 -0.00563322718894786 -0.0055990635981115"
+        rpy="0 0 0" />
+      <mass
+        value="0.000821477356009259" />
+      <inertia
+        ixx="3.90513390245763E-08"
+        ixy="-1.11888199904122E-11"
+        ixz="2.69290146266632E-12"
+        iyy="1.76544911434498E-08"
+        iyz="-9.02410955691291E-09"
+        izz="4.9395110655834E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_force_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_ring_force_sensor.STL" />
+      </geometry>
+      <surface>
+          <friction>
+              <ode>
+                  <mu>0.25</mu>  
+                  <mu2>0.25</mu2> 
+              </ode>
+          </friction>
+      </surface> 
+    </collision>
+  </link>
+  <joint
+    name="right_ring_force_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.0081807 0.031294 0.0080998"
+      rpy="1.887 1.5705 2.1734" />
+    <parent
+      link="right_ring_dip" />
+    <child
+      link="right_ring_force_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_pinky_mcp">
+    <inertial>
+      <origin
+        xyz="-0.010700946065574 0.0212571797208405 0.00821908889702942"
+        rpy="0 0 0" />
+      <mass
+        value="0.0400004927621343" />
+      <inertia
+        ixx="6.27547008597196E-06"
+        ixy="9.05323572263552E-08"
+        ixz="3.54861531059295E-09"
+        iyy="3.2904595698359E-06"
+        iyz="-4.77820330506494E-09"
+        izz="7.39552153213612E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_mcp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_mcp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_mcp_joint"
+    type="revolute">
+    <origin
+      xyz="0.01 -0.028301 0.11475"
+      rpy="1.5708 0 0" />
+    <parent
+      link="right_hand_base" />
+    <child
+      link="right_pinky_mcp" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.45735"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_pinky_pip">
+    <inertial>
+      <origin
+        xyz="-0.00314419720146366 0.0106744891473517 0.00864412512358675"
+        rpy="0 0 0" />
+      <mass
+        value="0.00574496250569101" />
+      <inertia
+        ixx="4.93347880966351E-07"
+        ixy="8.64716148219528E-08"
+        ixz="-5.69682311697152E-10"
+        iyy="4.81536529044768E-07"
+        iyz="1.94076863628207E-09"
+        izz="5.21882050624766E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_pip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_pip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_pip_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0014709 0.04212 -0.0002499"
+      rpy="0 0 0" />
+    <parent
+      link="right_pinky_mcp" />
+    <child
+      link="right_pinky_pip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.396"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="right_pinky_dip">
+    <inertial>
+      <origin
+        xyz="-0.000732466536179373 0.0150757054237563 0.00809913978154883"
+        rpy="0 0 0" />
+      <mass
+        value="0.0063989372716428" />
+      <inertia
+        ixx="7.66013304699806E-07"
+        ixy="5.97764025776379E-09"
+        ixz="2.53072492811611E-11"
+        iyy="1.91358086550736E-07"
+        iyz="-4.20948025228026E-11"
+        izz="7.03075351565884E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_dip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_dip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_dip_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0032605 0.018491 0.00035"
+      rpy="0 0 0" />
+    <parent
+      link="right_pinky_pip" />
+    <child
+      link="right_pinky_dip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.568"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="right_pinky_pip_joint"
+        multiplier="1.1232"
+        offset="0" /> 
+  </joint>
+  <link
+    name="right_pinky_force_sensor">
+    <inertial>
+      <origin
+        xyz="1.50349710936193E-05 -0.00563322977530661 -0.00559906603434453"
+        rpy="0 0 0" />
+      <mass
+        value="0.000821476662984886" />
+      <inertia
+        ixx="3.90513382701249E-08"
+        ixy="-1.11824539770243E-11"
+        ixz="2.69617798622852E-12"
+        iyy="1.76544745744708E-08"
+        iyz="-9.02410881725583E-09"
+        izz="4.9395090944421E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_force_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_pinky_force_sensor.STL" />
+      </geometry>
+      <surface>
+          <friction>
+              <ode>
+                  <mu>0.25</mu>  
+                  <mu2>0.25</mu2> 
+              </ode>
+          </friction>
+      </surface> 
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_force_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.0081665 0.030295 0.0080998"
+      rpy="1.887 1.5705 2.1734" />
+    <parent
+      link="right_pinky_dip" />
+    <child
+      link="right_pinky_force_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_plam_force_sensor">
+    <inertial>
+      <origin
+        xyz="0.000380260295352312 0.00147915127629069 -0.00345600862756401"
+        rpy="0 0 0" />
+      <mass
+        value="0.00510273604425368" />
+      <inertia
+        ixx="4.17831151418347E-07"
+        ixy="-2.11883772743013E-08"
+        ixz="9.21528713779677E-09"
+        iyy="1.5412488637117E-06"
+        iyz="9.85909440884654E-09"
+        izz="1.92333287024597E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_plam_force_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_plam_force_sensor.STL" />
+      </geometry>
+      <surface>
+          <friction>
+              <ode>
+                  <mu>0.25</mu>  
+                  <mu2>0.25</mu2> 
+              </ode>
+          </friction>
+      </surface> 
+    </collision>
+  </link>
+  <joint
+    name="right_plam_force_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.021234 0.00025311 0.081611"
+      rpy="1.5316 -0.0039142 1.5709" />
+    <parent
+      link="right_hand_base" />
+    <child
+      link="right_plam_force_sensor" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_hand_casing">
+    <inertial>
+      <origin
+        xyz="-0.0156286855968737 -0.000977283040214036 0.0601912621043598"
+        rpy="0 0 0" />
+      <mass
+        value="0.0556767648953531" />
+      <inertia
+        ixx="0.000124534850475658"
+        ixy="5.0052078754887E-07"
+        ixz="-2.29155701714135E-06"
+        iyy="7.21063672909886E-05"
+        iyz="3.09668261327464E-06"
+        izz="6.17530465789103E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_hand_casing.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rh5dg2_description/meshes/right_hand_casing.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hand_casing_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="right_hand_base" />
+    <child
+      link="right_hand_casing" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

@@ -1,0 +1,208 @@
+{
+  "generator": "tools/generate_left.py",
+  "source_urdf": "urdf/rh5dg2_right.xacro",
+  "source_urdf_sha256": "82e42287f3f3443313472606db4891c0864b0bd45e260684200c0abfe0918379",
+  "output_urdf": "urdf/rh5dg2_left.xacro",
+  "output_urdf_sha256": "0e9d8fadf48b0211dd073c01d2a8b76ef24a9e8717ed80aa36b3facb3a87f6d5",
+  "reflection": {
+    "matrix_diagonal": [
+      1,
+      -1,
+      1
+    ],
+    "plane": "base/flange XZ"
+  },
+  "joint_coordinate_convention": "same q, limits and mimic relations as right reference",
+  "status": "derived geometric reference; hardware left-hand calibration unverified",
+  "meshes": [
+    {
+      "source": "meshes/right_hand_base.STL",
+      "output": "meshes/left_mirrored/left_hand_base.STL",
+      "triangles": 73138,
+      "source_sha256": "bba922fcea75046295c2fc82a21a214210c68365a21d593d3b35fc57ba150185",
+      "output_sha256": "5e8f2eef765ab23e5e7c041684bca1b5e54fd9c8601e443051ba39dbc57e661e"
+    },
+    {
+      "source": "meshes/right_hand_casing.STL",
+      "output": "meshes/left_mirrored/left_hand_casing.STL",
+      "triangles": 6934,
+      "source_sha256": "3b0e46b4f9f356a01247ad9f780461b46834bfd8e10bdc88e38707dc822ab174",
+      "output_sha256": "4906b63bd52badad6c40a156cd28150118b48a3605db8149e8eaecbb6d93a491"
+    },
+    {
+      "source": "meshes/right_hand_flange.STL",
+      "output": "meshes/left_mirrored/left_hand_flange.STL",
+      "triangles": 2120,
+      "source_sha256": "7bb46921be342c5066aa67009924df22d0f221e53e857391e0cdf231cdcf7674",
+      "output_sha256": "525b837fed989702034d3eb348cc81859f57ee4a01955b8b6519bcebd6d73e87"
+    },
+    {
+      "source": "meshes/right_index_dip.STL",
+      "output": "meshes/left_mirrored/left_index_dip.STL",
+      "triangles": 6054,
+      "source_sha256": "5c1213156018257e94332c79dfd0725b2f421b20c0406ab2137a1c2adadc1b6b",
+      "output_sha256": "8fbea38823e0a4ac516c86e9cc38a75d58241400c706ca761f95d8e82c5cef4d"
+    },
+    {
+      "source": "meshes/right_index_force_sensor.STL",
+      "output": "meshes/left_mirrored/left_index_force_sensor.STL",
+      "triangles": 15792,
+      "source_sha256": "0a6024369d88c435ea71c7fc414c8c043b5d75131cbb12ba9f61d3a96cfda84c",
+      "output_sha256": "f0687fe3b5eb7777c1d64fa160367e63c7501d824e74c3d3f5412c5f852543e0"
+    },
+    {
+      "source": "meshes/right_index_mcp.STL",
+      "output": "meshes/left_mirrored/left_index_mcp.STL",
+      "triangles": 32834,
+      "source_sha256": "b9174d91fdf87d0338e60a95f6bc32b269ade551660d12459058d407c5bb0f09",
+      "output_sha256": "bfb2e7f878b77f21f46e1fe8932d7be70a978ce3dea55586a94f560600678d01"
+    },
+    {
+      "source": "meshes/right_index_pip.STL",
+      "output": "meshes/left_mirrored/left_index_pip.STL",
+      "triangles": 14454,
+      "source_sha256": "a6f389067770d4414b31efce87ce7dd74dc18a7ca38d87267e1d828d4ed32b41",
+      "output_sha256": "9ed77a03dc5a5f205b0bce2d1aa9163365ee1bdb13b9902cb9e3c2dccce72fa8"
+    },
+    {
+      "source": "meshes/right_index_pitch.STL",
+      "output": "meshes/left_mirrored/left_index_pitch.STL",
+      "triangles": 612,
+      "source_sha256": "8f47e5c46bc23a7bdf38c2792c8f8423280347e44a5c50120f58a515afa982ed",
+      "output_sha256": "2b40c5e5ade8102fc8b9a28fe035bb554a7205939c56966e35111105cade6866"
+    },
+    {
+      "source": "meshes/right_middle_dip.STL",
+      "output": "meshes/left_mirrored/left_middle_dip.STL",
+      "triangles": 5000,
+      "source_sha256": "f0e3dfed72e69b427330ca3b296eef04885d674ec49679c8643f7bc8f529e803",
+      "output_sha256": "c1e582eed1e232026fa43672156162fded8420a8a43a1beaa784743576a533d0"
+    },
+    {
+      "source": "meshes/right_middle_force_sensor.STL",
+      "output": "meshes/left_mirrored/left_middle_force_sensor.STL",
+      "triangles": 15792,
+      "source_sha256": "7a318fb63226e4c8e83539a272200d7addc74d775ec5586346866e9e06aa83f6",
+      "output_sha256": "9cd604300e344aaf22013ec1e06fa7c82dc95f5989f9753ff39ed7a20805fa09"
+    },
+    {
+      "source": "meshes/right_middle_mcp.STL",
+      "output": "meshes/left_mirrored/left_middle_mcp.STL",
+      "triangles": 32834,
+      "source_sha256": "208cf2627f6df93b5a2d7e8fe78cd75ecd665b266881382fae6cef1511e459f9",
+      "output_sha256": "6995a2ac8271d4a132cc40ebe04d7354800bbf8e33266b6c6e8d1606045d43cc"
+    },
+    {
+      "source": "meshes/right_middle_pip.STL",
+      "output": "meshes/left_mirrored/left_middle_pip.STL",
+      "triangles": 14454,
+      "source_sha256": "443b87269353febc9ddfd9653569a377c932b58534cfebe304d5244c411bfa90",
+      "output_sha256": "50d5b055b52a563fa5c7cf33def220e52bf8c0c021b548826707084d26b9a5b2"
+    },
+    {
+      "source": "meshes/right_middle_pitch.STL",
+      "output": "meshes/left_mirrored/left_middle_pitch.STL",
+      "triangles": 612,
+      "source_sha256": "d7f56d3b25aa7203e4b41934fedb569db50ab37b9496586bedd0f371717876a5",
+      "output_sha256": "286927de418abf66e25212bf7c96f4573ac7b2504d1308576c159cc0d7a0f156"
+    },
+    {
+      "source": "meshes/right_pinky_dip.STL",
+      "output": "meshes/left_mirrored/left_pinky_dip.STL",
+      "triangles": 5490,
+      "source_sha256": "baa9410cebe335c0d8d9b7e0a09cef0ed0db48956e81dee1660684588365ffbf",
+      "output_sha256": "5025f82fd6b8e448e34029e094e20e310e83c72639744bdeff3b57f29cfda48c"
+    },
+    {
+      "source": "meshes/right_pinky_force_sensor.STL",
+      "output": "meshes/left_mirrored/left_pinky_force_sensor.STL",
+      "triangles": 15792,
+      "source_sha256": "f6261de8085c0e775df0b83123d7004107000272016f70993141d04a9d2cebb6",
+      "output_sha256": "e2cdc7c697f246678dd98f71cf2e67bd095fbf71ac84ecaa8f0c7d020bbc8b8e"
+    },
+    {
+      "source": "meshes/right_pinky_mcp.STL",
+      "output": "meshes/left_mirrored/left_pinky_mcp.STL",
+      "triangles": 31782,
+      "source_sha256": "b6ab36c1251966207c4de34b0e5d534e8cd143c9c1f2fde9dabc83208e93fd91",
+      "output_sha256": "ec3bda29325ba7e82d78bd4872a070db90aee961c03a6d5fc812ac537457fbac"
+    },
+    {
+      "source": "meshes/right_pinky_pip.STL",
+      "output": "meshes/left_mirrored/left_pinky_pip.STL",
+      "triangles": 14454,
+      "source_sha256": "c44fd64668910ff218999f6b1c0380a962de766672b9a268bff56f2e68ef5cc2",
+      "output_sha256": "18b66bab3b8e601d27dd8001f2ee48c3abe82c8a4c49c835a5cf44ec4aa21a91"
+    },
+    {
+      "source": "meshes/right_plam_force_sensor.STL",
+      "output": "meshes/left_mirrored/left_plam_force_sensor.STL",
+      "triangles": 54602,
+      "source_sha256": "def750d40d72c9dd66f3bc4781fd6839bf52a55c274892cc8a9bd0012dd01e85",
+      "output_sha256": "9678fe3409332d84c444b7a0fafde451666fe7c947c759b8870c6ded851e17ff"
+    },
+    {
+      "source": "meshes/right_ring_dip.STL",
+      "output": "meshes/left_mirrored/left_ring_dip.STL",
+      "triangles": 5304,
+      "source_sha256": "11591f896033fd48157f8b908d987c27e4f91d82d37caf45072e1b4ea301211d",
+      "output_sha256": "f9d396806fec264af82d2790a0bfc389e8ea2fa3f517f580ce9946be58aa9e00"
+    },
+    {
+      "source": "meshes/right_ring_force_sensor.STL",
+      "output": "meshes/left_mirrored/left_ring_force_sensor.STL",
+      "triangles": 15792,
+      "source_sha256": "fe135a1c38cfae691d8a4cd1ab572eb8c61dfffc7526a22999e7e9bb0715f0b7",
+      "output_sha256": "d0e42390e359f1d376f076f634e45511e95b040467c25a98f0c1e35681fc3d53"
+    },
+    {
+      "source": "meshes/right_ring_mcp.STL",
+      "output": "meshes/left_mirrored/left_ring_mcp.STL",
+      "triangles": 31782,
+      "source_sha256": "ab37d5ab2a6c3764fac755c41bf8360dd0b86c0ea1fdd432663838a16613dc93",
+      "output_sha256": "5f99afef8717d7219b278e5d31bf278036c9c6cc4be01e3dd7fb8c588a9df513"
+    },
+    {
+      "source": "meshes/right_ring_pip.STL",
+      "output": "meshes/left_mirrored/left_ring_pip.STL",
+      "triangles": 14454,
+      "source_sha256": "09a5e56b95bc7a93657fb7b2ef5b71492ad94ebef150d9455be0713f7fda6778",
+      "output_sha256": "c2fc72b2835e8353cbb02816f5611ca91ee7f215874e302046dd62786b859ad4"
+    },
+    {
+      "source": "meshes/right_thumb_dip.STL",
+      "output": "meshes/left_mirrored/left_thumb_dip.STL",
+      "triangles": 7192,
+      "source_sha256": "5aa26f8851a831d817d70e7b9dcd99edf4d5cc155d02de3a2eb285fe51f924ed",
+      "output_sha256": "1406bae0d0f1f81d1e933097a0a1a1527a2b8d98b1b142eedc9a3214be4ec24a"
+    },
+    {
+      "source": "meshes/right_thumb_force_sensor.STL",
+      "output": "meshes/left_mirrored/left_thumb_force_sensor.STL",
+      "triangles": 15792,
+      "source_sha256": "80fb1268ba2839045e34cfb35e0d9bdd06bbc54eead2ad7aff75a930e697c7ca",
+      "output_sha256": "e4d31db4d52a50d5038a7c786291869665439f4ef5be1fecd054b13c2321bc9a"
+    },
+    {
+      "source": "meshes/right_thumb_mcp.STL",
+      "output": "meshes/left_mirrored/left_thumb_mcp.STL",
+      "triangles": 12808,
+      "source_sha256": "483b04a65415157a9a09c8d9ebb3428f636745a17575edef3ec5609fe7bf8c82",
+      "output_sha256": "c23d38a3317a1446ad8ac67d7e479cd2987538d3d1ba0c6746d0c0ccb6430ad8"
+    },
+    {
+      "source": "meshes/right_thumb_pip.STL",
+      "output": "meshes/left_mirrored/left_thumb_pip.STL",
+      "triangles": 34548,
+      "source_sha256": "a2eb18deeb874662ca689962b312f861a931f6abcd46c43fc610a26fa4d5edfa",
+      "output_sha256": "d0511484733956aa0a15380bf711adaa9a6a0045c2095ddef14429fd7c613a87"
+    },
+    {
+      "source": "meshes/right_thumb_yaw.STL",
+      "output": "meshes/left_mirrored/left_thumb_yaw.STL",
+      "triangles": 472,
+      "source_sha256": "3e71c8155cd50a4c72932634497a55e674a5d5e8ee004667866908c7e3fde85e",
+      "output_sha256": "2012304a7f1086bea51c237b7d5d92e37961147b71ad2f03bff6b68ef9cd2358"
+    }
+  ]
+}

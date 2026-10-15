@@ -1,0 +1,20 @@
+/inspire/right/driver:
+  ros__parameters:
+    side: right
+    port: /dev/rh5dg2_right
+    baudrate: 115200
+    hand_id: 1
+    enable_write: true
+    publish_joint_states: false
+    joint_mapping_confirmed: false
+    command_max_age_sec: 0.5
+    serial_timeout_ms: 40
+    angle_write_ack: 1
+    stop_write_ack: 1
+    single_angle_write_ack: 1
+    angle_rate: 5.0
+    force_rate: 2.0
+    current_rate: 2.0
+    touch_rate: 1.0
+    slow_rate: 1.0
+    state_rate: 20.0

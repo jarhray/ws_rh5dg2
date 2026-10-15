@@ -1,0 +1,10 @@
+# kind uses HandCommand constants. Values use the same fixed 13-channel wire order.
+uint8 kind
+int16[13] values
+---
+bool success
+string message
+# Valid only when success=true: acknowledged values after angle limiting.
+# ANGLE -1 still means skipped. These are targets, not measured positions.
+int16[13] applied_values
+bool[13] clamped

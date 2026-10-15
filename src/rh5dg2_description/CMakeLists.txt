@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.8)
+project(rh5dg2_description)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY launch meshes urdf rviz DESTINATION share/${PROJECT_NAME}
+  PATTERN "__pycache__" EXCLUDE PATTERN "*.pyc" EXCLUDE)
+install(FILES README.md DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS tools/generate_left.py DESTINATION share/${PROJECT_NAME}/tools)
+if(BUILD_TESTING)
+  enable_testing()
+  find_package(Python3 REQUIRED COMPONENTS Interpreter)
+  add_test(NAME mirrored_model COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test/test_mirror.py)
+  set_tests_properties(mirrored_model PROPERTIES TIMEOUT 30)
+  add_test(NAME mirrored_assets_current COMMAND ${Python3_EXECUTABLE}
+    ${CMAKE_CURRENT_SOURCE_DIR}/tools/generate_left.py --check)
+  set_tests_properties(mirrored_assets_current PROPERTIES TIMEOUT 30)
+endif()
+ament_package()

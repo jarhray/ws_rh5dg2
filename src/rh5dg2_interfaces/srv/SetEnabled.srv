@@ -1,0 +1,7 @@
+# Enable commands with fresh angle/error feedback and no reported motor errors.
+# Software command acceptance only: does not write registers, stop movement,
+# or clear emergency stop. Use stop/clear_stop services for emergency stop.
+bool enabled
+---
+bool success
+string message

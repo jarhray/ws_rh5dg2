@@ -1,0 +1,21 @@
+/inspire/left/driver:
+  ros__parameters:
+    side: left
+    port: /dev/rh5dg2_left
+    baudrate: 115200
+    hand_id: 1
+    enable_write: true
+    publish_joint_states: false
+    joint_mapping_confirmed: false
+    command_max_age_sec: 0.5
+    serial_timeout_ms: 40
+    # These ACK values require exact target/flag readback.
+    angle_write_ack: 32
+    stop_write_ack: 2
+    single_angle_write_ack: 2
+    angle_rate: 5.0
+    force_rate: 2.0
+    current_rate: 2.0
+    touch_rate: 1.0
+    slow_rate: 1.0
+    state_rate: 20.0
